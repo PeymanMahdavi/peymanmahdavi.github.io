@@ -6,14 +6,28 @@
     <title>Peyman Personal Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
+
+  <script>
+    function themetoggle() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+  </script>  
+
+  <body class="dark-mode">
 
     <div class="container">
-      <div class="hero">
+      <div class="topright">
+        <label style="vertical-align: -webkit-baseline-middle;">Dark Mode</label>
+        <label class="switch">
+          <input type="checkbox" checked="checked" onclick="themetoggle()">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    <div class="hero">
         <h1 class="name"><strong>Peyman</strong> Mahdavi</h1>
         <span class="job-title">Software Engineer</span>
-        <span class="email">p7.mahdavi@gmail.com</span>
-  
+        <span class="email">p7.mahdavi@gmail.com</span>  
         <h2 class="lead">.Net Developer, Enthusiastic Learner</h2>
       </div>
     </div>
@@ -28,7 +42,7 @@
           <span class="exp">+ 5 years</span>
           <div>
             <h3>Programming</h3>
-            <span>C#, C++, Java, Python, …</span>
+            <span>C#, C++, Java, Python</span>
           </div>
         </div>
         
@@ -36,7 +50,7 @@
           <span class="exp">+ 4 years</span>
           <div>
             <h3>Teamwork & Collaboration</h3>
-            <span>Problem Solving, TeamLead, Scrum & Kanban, Azure, Git</span>
+            <span>Problem Solving, TeamLead, Scrum & Kanban, Azure DevOps, Git</span>
           </div>
         </div>	
             
@@ -44,7 +58,7 @@
           <span class="exp">+ 3 years</span>
           <div>
             <h3>Engineering & development </h3>
-            <span>Desgin Patterns, Clean Code, Back-end development, WinForms</span>
+            <span>Back-end development, Robotics, Clean Code, WinForms</span>
           </div>
         </div>
   
@@ -64,21 +78,28 @@
           <div class="list-card">
             <div>
               <h3>Programming</h3>
-              <span>C#, .Net, Back-end</span>
+              <span>C#, .Net, Back-end, WinForms, Video games</span>
             </div>
           </div>	
 
           <div class="list-card">
             <div>
               <h3>Data & Science</h3>
-              <span>Machine Learning, Image Processing, Optics</span>
+              <span>Robotics, Machine Learning, Image Processing</span>
             </div>
           </div>	
 
           <div class="list-card">
             <div>
               <h3>Hobbies</h3>
-              <span>Reading, Swimming, Badminton, Freezby, Movies, Video games</span>
+              <span>Video games, Board games, Books, Movies</span>
+            </div>
+          </div>		
+
+          <div class="list-card">
+            <div>
+              <h3>Sports</h3>
+              <span>Swimming, Freezby, Badminton, Basketball</span>
             </div>
           </div>		
 
@@ -88,124 +109,18 @@
   
     <div class="container cards">
       </br></br></br>
-      <h2 class="section-title">Social Media</h2>
+      <h2 class="section-title"></h2>
 
       <div class="list-card">
-        <div>
-          <h3><a href="https://www.linkedin.com/in/peymanmahdavi/">LinkedIn</a></h3>
-        </div>
-      </div>	
-    
-      <div class="list-card">
-        <div>
-          <h3><a href="https://gitlab.com/peymanmahdavi">Gitlab Profile</a></h3>
-        </div>
-      </div>	
+            <a href="https://www.linkedin.com/in/peymanmahdavi/"><img class="social-media" src="icons/linkedin.svg"/></a>
 
-      <div class="list-card">
-        <div>
-          <h3><a href="https://github.com/peymanmahdavi">Github Profile</a></h3>
-        </div>
-      </div>	
+          <a href="https://github.com/peymanmahdavi"><img class="social-media" src="icons/github.svg"/></a>
 
-      <div class="list-card">
-        <div>
-          <h3><a href="https://peymanmahdavi.github.io/Blog/">My Blog</a></h3>
-        </div>
+          <a href="https://twitter.com/peym7n"><img class="social-media" src="icons/twitter.svg"/></a>
       </div>	
-
-      <!-- <div class="card">
-        <div class="skill-level">
-          <span></span>
-          <h2></h2>
-        </div>
-  
-        <div class="skill-meta">
-          <h3>LinkedIn</h3>
-          <span></span>
-        </div>
-      </div> -->
-          
-      <!-- <div class="card">
-        <div class="skill-level">
-          <h2>50</h2>
-          <span>%</span>
-        </div>
-  
-        <div class="skill-meta">
-          <h3>Web</h3>
-          <span>Applications development integrating third-party services and mobile client(s)</span>
-        </div>
-      </div>
-        
-      <div class="card">
-        <div class="skill-level">
-          <h2>30</h2>
-          <span>%</span>
-        </div>
-  
-        <div class="skill-meta">
-          <h3>Technical solutions</h3>
-          <span>Such as web services, scripts, configurations</span>
-        </div>
-      </div>
-  
-      <div class="card">
-        <div class="skill-level">
-          <h2>20</h2>
-          <span>%</span>
-        </div>
-  
-        <div class="skill-meta">
-          <h3>Leading</h3>
-          <span>Web projects and ensure the quality of delivery</span>
-        </div>
-      </div> -->
-  
-    </div>
-  
-    <!-- <div class="container">
-      <h2 class="section-title">Timeline</h2>
-      <ol class="timeline">
-        <li>
-          <p class="line">Experiences</p>
-          <span class="point"></span>
-          <p class="description">
-            Lead Developer @Geronimo
-          </p>
-          <span class="date">Today - Apr. 2016</span>
-        </li>
-  
-        <li>
-          <span class="point"></span>
-          <p class="description">
-            Freelance
-          </p>
-          <span class="date">Apr. 2016 - Sep. 2015</span>
-        </li>
-  
-              <li>
-          <p class="line">Education</p>
-          <span class="point"></span>
-          <p class="description">
-            DUT "Métiers du multimédia et de l'internet"
-          </p>
-          <span class="date">2015 - 2013</span>
-        </li>
-  
-              <li>
-          <span class="point"></span>
-          <p class="description">
-            Art & Design studies
-          </p>
-          <span class="date">2013 - 2008</span>
-        </li>
-      </ol>
-  
-    </div> -->
   
     <footer class="container">
-      <span style="font-size: 16px; margin-top: ">Coded by <a href="https://newtodesign.com/">New to design </a> Designed by <a href="https://dribbble.com/shots/4342703-Minimal-resume-freebie-for-junior-self-taught-people">Nicolas Meuzard</a></span>
+      <span style="font-size: 12px; margin-top: 10px ">I used the sample which was Coded by <a href="https://newtodesign.com/">New to design </a> Designed by <a href="https://dribbble.com/shots/4342703-Minimal-resume-freebie-for-junior-self-taught-people">Nicolas Meuzard</a></span>
     </footer>
   
   </body>
